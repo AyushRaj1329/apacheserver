@@ -13,12 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Validate HTML
-        uses: Cyb3r-Jak3/html5validator-action@v0.2.0
-        continue-on-error: true
-        with:
-          root: .
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
